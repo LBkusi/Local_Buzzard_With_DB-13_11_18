@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lb.richardk.lbfour">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".VehicleActivity"
+            android:parentActivityName=".RegisterActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".SendAlertActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".ReceivedActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".ContactUsActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:parentActivityName=".ContactUsActivity" />
+        <activity
+            android:name=".SettingActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".HelpEnquireActivity"
+            android:parentActivityName=".ContactUsActivity" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".TutorialActivity"
+            android:parentActivityName=".AccountActivity" />
+        <activity
+            android:name=".AccountActivity"
+            android:parentActivityName=".SettingActivity" />
+        <activity
+            android:name=".AddVehicleActivity"
+            android:parentActivityName=".AccountActivity" />
+        <activity
+            android:name=".ReportActivity"
+            android:parentActivityName=".SettingActivity" />
+        <activity android:name=".UpdateDetailsActivity" />
+        <activity android:name=".SentReceivedActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".NotificationsActivity" />
+        <activity android:name=".ViewVehicleActivity" />
+        <activity android:name=".VehicleViewActivity" />
+        <activity android:name=".VehicleReg1Activity" />
+        <activity android:name=".DeleteVehicleActivity" />
+        <activity android:name=".AboutActivity"></activity>
+    </application>
+
+</manifest>
